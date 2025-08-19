@@ -17,8 +17,21 @@ classifiers = [
 
 dependencies = [
     "torch",
-    "typing"
+    "typing",
+    "matplotlib",
+    "prettytable",
+    "sympy",
+    "scikit-learn",
+    "pyyaml",
+    "tqdm",
+    "pandas",
+    "pykan",
+    "scipy",
+    "numpy<1.25.0"
 ]
 
 [tool.setuptools]
 packages = ["torch_eql"]
+
+[project.scripts]
+eqlcli = "torch_eql.cli:cli_call"
